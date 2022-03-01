@@ -1,10 +1,20 @@
 import React from 'react';
 import ProductCard from './ProductCard';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     return (
       <div className='main-content'>
-        <div className="App-header"></div>
+        <div className="App-header">
+          <h2>Quality Apparel for cheap prices.</h2>
+          <Link to="/shop" style={{textDecoration:'none', }}>
+            <div class="box-1">
+              <div class="btn btn-one">
+                <span>Shop Now</span>
+              </div>
+            </div>
+          </Link>
+        </div>
         <div className="main-padding">
             <h1>This is the Home page</h1>
             <div className="card-container">
