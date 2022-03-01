@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function About() {
+export default function Shop() {
     return (
       <div>
         <div className="App-header">
-          <h2>Our mission</h2>
+          <h2>Shop</h2>
         </div>
       </div>
     );
