@@ -210,38 +210,44 @@ div[class*=box] {
   transform: scale(0.1, 1);
 }
 
-.search-circle{
-  margin: auto;
-  padding: 0 2vw;
-}
-.search-field {
-  transform: translate(0,50%);
-  padding: 10px;
-  width: 2rem;
-  height: 2rem;
+.input {
+  width: 8vw;
   background: none;
-  border: 2px solid rgb(200, 200, 200);
-  border-radius: 50px;
-  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(200, 200, 200);
   color: rgb(200, 200, 200);
-  outline: none;
-  transition: .5s;;
+  font-size: 16px;
+  padding: 2px 0;
 }
 
-.search-circle:hover input{
-  width: 350px;
-  background: #272133;
-  border-radius: 10px;
-  border: 2px solid white;
+.input:focus{
+  outline: none;
 }
-.fai{
-  transform: translate(50%,-50%);
-  font-size: 16px;
-  color: rgba(255,255,255,0.5);
-  transition: .2s;
-  width: 1rem;
+
+.fai {
+  position: absolute;
+  color: rgb(200, 200, 200);
+  width: 18px;
+  transition: 0.2s;
 }
-.search-circle:hover .fai{
+
+.search-field:hover .fai{
   opacity: 0;
-  z-index: -1;
+}
+
+.search-field:hover .search-close{
+  opacity: 1;
+}
+
+.search-close {
+  opacity: 0;
+  color: rgb(200, 200, 200);
+  position: absolute; 
+  right: 2.1vw;
+  font-size: 20px;
+  font-weight: Bold;
+  top: -5px;
+}
+.search-close:hover{
+  cursor: pointer;
 }
