@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import SearchForm from './SearchForm';
 
 class Navigation extends Component{
-
-    searchClose() {
-        document.getElementByName("search").txt.value='';
-    };
 
     render(){
         return(
@@ -20,13 +15,7 @@ class Navigation extends Component{
                     <li><NavLink activeClassName='active' to="shop">Shop</NavLink></li>
                     <li><NavLink activeClassName='active' to="login">Login</NavLink></li>   
                     <li> 
-                        <div className='search-field'>
-                            <form name="search" style={{padding:'0 2vw', position:'relative'}}>
-                                <FontAwesomeIcon icon={faMagnifyingGlass} class='fai'/>
-                                <div className="search-close" onClick={searchClose()}>X</div>
-                                <input type="text" class="input" name="txt" onmouseout="document.search.txt.value = ''"/>
-                            </form> 
-                        </div>
+                        <SearchForm/>
                     </li>            
                 </ul>
             </nav>

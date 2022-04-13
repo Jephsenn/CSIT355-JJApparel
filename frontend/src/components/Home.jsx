@@ -9,7 +9,7 @@ export default function Home() {
           <h2>Quality Apparel for cheap prices.</h2>
           <Link to="/shop" style={{textDecoration:'none', textShadow:'0 0 5px black', zIndex:'1'}}>
             <div class="box-1">
-              <div class="btn btn-one">
+              <div class="shop-btn shop-btn-one">
                 <span>Shop Now</span>
               </div>
             </div>
